@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ApiASPNET.Context;
@@ -23,7 +22,7 @@ namespace ApiASPNET.Services
             {
                 return await _context.Alunos.ToListAsync();
             }
-            catch 
+            catch
             {
 
                 throw;
@@ -51,7 +50,7 @@ namespace ApiASPNET.Services
             var aluno = await _context.Alunos.FindAsync(id);
             return aluno;
         }
- 
+
 
         public async Task CreateAluno(Aluno aluno)
         {
