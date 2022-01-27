@@ -83,7 +83,7 @@ namespace ApiASPNET.Controllers
             try
             {
                 await _alunoService.CreateAluno(aluno);
-                return CreatedAtRoute(nameof(GetAluno), new { id = aluno.Id }, aluno);                
+                return CreatedAtRoute(nameof(GetAluno), new { id = aluno.Id }, aluno);
             }
             catch
             {
