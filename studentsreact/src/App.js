@@ -12,6 +12,8 @@ function App() {
 
   const [data, setData] = useState([]);
   const [updateData, setUpdateData] = useState(false);
+
+  //MODAL STATES
   const [modalIncluir, setModalIncluir] = useState(false);
   const [modalEditar, setModalEditar] = useState(false);
   const [modalExcluir, setModalExcluir] = useState(false);
@@ -104,8 +106,9 @@ function App() {
   }
 
   useEffect(() => {
+    pedidosGet();
+
     if(updateData) {
-      pedidosGet();
       setUpdateData(false);
     }
     

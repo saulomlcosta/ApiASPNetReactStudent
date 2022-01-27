@@ -1,9 +1,11 @@
 ﻿using ApiASPNET.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiASPNET.Context
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<IdentityUser>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
@@ -13,18 +15,19 @@ namespace ApiASPNET.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Aluno>().HasData(
                     new Aluno
                     {
                         Id = 1,
-                        Nome = "Maria da Penha",
+                        Nome = "maria da penha",
                         Email = "mariapenha@yahoo.com",
                         Idade = 23
                     },
                         new Aluno
                         {
                             Id = 2,
-                            Nome = "Manuel Bueno",
+                            Nome = "manuel bueno",
                             Email = "manuelbueno@yahoo.com",
                             Idade = 22
                         }

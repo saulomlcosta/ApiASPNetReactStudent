@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ApiASPNET.Services
 {
-    public class AlunosService : IAlunoService
+    public class AlunosService
     {
         private readonly AppDbContext _context;
 
