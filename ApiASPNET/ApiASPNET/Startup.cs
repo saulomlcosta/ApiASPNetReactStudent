@@ -55,6 +55,10 @@ namespace ApiASPNET
 
             services.AddCors();
 
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppDbContext>()
+                .AddDefaultTokenProviders();    
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
