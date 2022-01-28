@@ -52,12 +52,8 @@ namespace ApiASPNET
             services.AddScoped<IAuthenticate, AuthenticateService>();
 
             services.AddScoped<AlunosService>();
-
+     
             services.AddCors();
-
-            services.AddIdentity<IdentityUser, IdentityRole>()
-                .AddEntityFrameworkStores<AppDbContext>()
-                .AddDefaultTokenProviders();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
