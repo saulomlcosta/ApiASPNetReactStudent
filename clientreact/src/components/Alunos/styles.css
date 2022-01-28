@@ -51,9 +51,8 @@
 
 .aluno-container ul {
     display: grid;
-    padding: 0 25px;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 55px;
+    grid-gap: 20px;
     list-style: none;
 }
 
@@ -82,7 +81,7 @@
 .aluno-container ul li p {
     color: #737380;
     line-height: 21px;
-    font-size: 16px
+    font-size: 16px;
 }
 
 .container-card {
@@ -107,6 +106,7 @@
     background: 0;
     padding: 0;
     display: flex;
+    justify-content: flex-end;
     width: 50px;
-    margin-right: 20px;
+    margin-right: 10px;
 }

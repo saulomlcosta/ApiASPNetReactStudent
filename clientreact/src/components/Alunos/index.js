@@ -12,7 +12,7 @@ export default function Alunos() {
             <header>
                 <img className="adminIcon" src={logoCadastro} alt="Cadastro" />
                 <span>Bem vindo, <strong>Macoratti</strong>!</span>
-                <Link className="button" to="aluno/novo">Novo Aluno</Link>
+                <Link className="button" to="aluno/novo/0">Novo Aluno</Link>
                 <button type="button">
                     <FiXCircle size={35} color="#17202a" />
                 </button>
@@ -34,14 +34,18 @@ export default function Alunos() {
                             <b>Idade: </b>22<br /><br/>
                         </li>                   
                     </ul>
+
+                    <div className="button-card">
+                        <button type="button" className="button-card">
+                                <FiEdit size={35} color="#17202a" />
+                        </button>
+                            
+                        <button type="button" className="button-card">
+                            <FiUserX size={35} color="#17202a" />
+                        </button>
+                    </div>
                     
-                    <button type="button" className="button-card">
-                            <FiEdit size={35} color="#17202a" />
-                    </button>
-                        
-                    <button type="button" className="button-card">
-                        <FiUserX size={35} color="#17202a" />
-                    </button>
+                  
                 </div>
 
                 <div className="card">
@@ -53,13 +57,16 @@ export default function Alunos() {
                         </li>                   
                     </ul>
                     
-                    <button type="button" className="button-card">
-                            <FiEdit size={35} color="#17202a" />
-                    </button>
-                        
-                    <button type="button" className="button-card">
-                        <FiUserX size={35} color="#17202a" />
-                    </button>
+                    <div className="button-card">
+                        <button type="button" className="button-card">
+                                <FiEdit size={35} color="#17202a" />
+                        </button>
+                            
+                        <button type="button" className="button-card">
+                            <FiUserX size={35} color="#17202a" />
+                        </button>
+                    </div>
+                    
                 </div>                
             </div>
             
